@@ -1,0 +1,123 @@
+[0.061s] Invoking command in '/home/lass6230/github/ros2_controllers_mecanum/build/mecanum_drive_controller': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/lass6230/github/ros2_controllers_mecanum/mecanum_drive_controller -DCMAKE_INSTALL_PREFIX=/home/lass6230/github/ros2_controllers_mecanum/install/mecanum_drive_controller
+[0.125s] -- The CXX compiler identification is GNU 11.4.0
+[0.132s] -- Detecting CXX compiler ABI info
+[0.207s] -- Detecting CXX compiler ABI info - done
+[0.216s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.216s] -- Detecting CXX compile features
+[0.217s] -- Detecting CXX compile features - done
+[0.219s] -- Found ament_cmake: 1.3.7 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.386s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[0.472s] -- Found backward_ros: 1.0.2 (/opt/ros/humble/share/backward_ros/cmake)
+[0.482s] -- Found libdw: /usr/lib/x86_64-linux-gnu/libdw.so  
+[0.488s] -- Could NOT find libbfd (missing: LIBBFD_LIBRARY LIBBFD_INCLUDE_DIR) 
+[0.488s] -- BACKWARD_HAS_UNWIND=1
+[0.488s] -- BACKWARD_HAS_BACKTRACE=0
+[0.488s] -- BACKWARD_HAS_BACKTRACE_SYMBOL=0
+[0.488s] -- BACKWARD_HAS_DW=1
+[0.488s] -- BACKWARD_HAS_BFD=0
+[0.488s] -- Found Backward: /opt/ros/humble/share/backward_ros/cmake  
+[0.490s] -- Found controller_interface: 2.37.0 (/opt/ros/humble/share/controller_interface/cmake)
+[0.529s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.534s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.543s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.558s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.579s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.343s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.346s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.387s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[1.432s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.435s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[1.446s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.457s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[1.466s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[1.475s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.487s] -- Looking for C++ include pthread.h
+[1.598s] -- Looking for C++ include pthread.h - found
+[1.599s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.710s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.712s] -- Found Threads: TRUE  
+[2.016s] -- Found generate_parameter_library: 0.3.7 (/opt/ros/humble/share/generate_parameter_library/cmake)
+[2.018s] -- Found parameter_traits: 0.3.7 (/opt/ros/humble/share/parameter_traits/cmake)
+[2.045s] -- Found nav_msgs: 4.2.3 (/opt/ros/humble/share/nav_msgs/cmake)
+[2.143s] -- Found realtime_tools: 2.5.0 (/opt/ros/humble/share/realtime_tools/cmake)
+[2.189s] -- Found std_srvs: 4.2.3 (/opt/ros/humble/share/std_srvs/cmake)
+[2.208s] -- Found tf2: 0.25.5 (/opt/ros/humble/share/tf2/cmake)
+[2.217s] -- Found tf2_geometry_msgs: 0.25.5 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[2.227s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[2.228s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[2.229s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[2.798s] -- Found ament_cmake_gmock: 1.3.7 (/opt/ros/humble/share/ament_cmake_gmock/cmake)
+[2.800s] -- Found controller_manager: 2.37.0 (/opt/ros/humble/share/controller_manager/cmake)
+[3.141s] -- Found ros2_control_test_assets: 2.37.0 (/opt/ros/humble/share/ros2_control_test_assets/cmake)
+[3.144s] -- Found gmock sources under '/opt/ros/humble/src/gmock_vendor': C++ tests using 'Google Mock' will be built
+[3.185s] -- The C compiler identification is GNU 11.4.0
+[3.192s] -- Detecting C compiler ABI info
+[3.285s] -- Detecting C compiler ABI info - done
+[3.293s] -- Check for working C compiler: /usr/bin/cc - skipped
+[3.293s] -- Detecting C compile features
+[3.294s] -- Detecting C compile features - done
+[3.298s] -- Found ament_cmake_gtest: 1.3.7 (/opt/ros/humble/share/ament_cmake_gtest/cmake)
+[3.299s] -- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[4.686s] -- Configuring done
+[4.814s] -- Generating done
+[4.817s] -- Build files have been written to: /home/lass6230/github/ros2_controllers_mecanum/build/mecanum_drive_controller
+[4.831s] Invoked command in '/home/lass6230/github/ros2_controllers_mecanum/build/mecanum_drive_controller' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/lass6230/github/ros2_controllers_mecanum/mecanum_drive_controller -DCMAKE_INSTALL_PREFIX=/home/lass6230/github/ros2_controllers_mecanum/install/mecanum_drive_controller
+[4.833s] Invoking command in '/home/lass6230/github/ros2_controllers_mecanum/build/mecanum_drive_controller': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/lass6230/github/ros2_controllers_mecanum/build/mecanum_drive_controller -- -j4 -l4
+[4.880s] [ 13%] [34m[1mRunning `/opt/ros/humble/bin/generate_parameter_library_cpp /home/lass6230/github/ros2_controllers_mecanum/build/mecanum_drive_controller/mecanum_drive_controller_parameters/include//mecanum_drive_controller_parameters.hpp /home/lass6230/github/ros2_controllers_mecanum/mecanum_drive_controller/src/mecanum_drive_controller.yaml `[0m
+[4.880s] [ 13%] [32mBuilding CXX object gmock/CMakeFiles/gmock.dir/opt/ros/humble/src/gtest_vendor/src/gtest-all.cc.o[0m
+[4.881s] [ 20%] [32mBuilding CXX object gmock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o[0m
+[4.882s] [ 26%] [32mBuilding CXX object gmock/CMakeFiles/gmock.dir/src/gmock-all.cc.o[0m
+[5.314s] [ 26%] Built target mecanum_drive_controller_parameters
+[5.335s] [ 33%] [32mBuilding CXX object CMakeFiles/mecanum_drive_controller.dir/src/mecanum_drive_controller.cpp.o[0m
+[6.261s] [ 40%] [32m[1mLinking CXX static library libgmock_main.a[0m
+[6.295s] [ 40%] Built target gmock_main
+[6.304s] [ 46%] [32mBuilding CXX object CMakeFiles/mecanum_drive_controller.dir/src/odometry.cpp.o[0m
+[8.430s] [ 53%] [32m[1mLinking CXX static library libgmock.a[0m
+[8.502s] [ 53%] Built target gmock
+[8.523s] [ 60%] [32mBuilding CXX object CMakeFiles/test_load_mecanum_drive_controller.dir/test/test_load_mecanum_drive_controller.cpp.o[0m
+[13.828s] [ 66%] [32m[1mLinking CXX executable test_load_mecanum_drive_controller[0m
+[14.205s] [ 66%] Built target test_load_mecanum_drive_controller
+[16.273s] [ 73%] [32m[1mLinking CXX shared library libmecanum_drive_controller.so[0m
+[16.952s] [ 73%] Built target mecanum_drive_controller
+[16.972s] [ 86%] [32mBuilding CXX object CMakeFiles/test_mecanum_drive_controller_preceeding.dir/test/test_mecanum_drive_controller_preceeding.cpp.o[0m
+[16.973s] [ 86%] [32mBuilding CXX object CMakeFiles/test_mecanum_drive_controller.dir/test/test_mecanum_drive_controller.cpp.o[0m
+[24.027s] [ 93%] [32m[1mLinking CXX executable test_mecanum_drive_controller_preceeding[0m
+[24.786s] [ 93%] Built target test_mecanum_drive_controller_preceeding
+[29.434s] [100%] [32m[1mLinking CXX executable test_mecanum_drive_controller[0m
+[30.495s] [100%] Built target test_mecanum_drive_controller
+[30.505s] Invoked command in '/home/lass6230/github/ros2_controllers_mecanum/build/mecanum_drive_controller' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/lass6230/github/ros2_controllers_mecanum/build/mecanum_drive_controller -- -j4 -l4
+[30.551s] Invoking command in '/home/lass6230/github/ros2_controllers_mecanum/build/mecanum_drive_controller': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/lass6230/github/ros2_controllers_mecanum/build/mecanum_drive_controller
+[30.557s] -- Install configuration: ""
+[30.558s] -- Installing: /home/lass6230/github/ros2_controllers_mecanum/install/mecanum_drive_controller/include/mecanum_drive_controller_parameters
+[30.558s] -- Installing: /home/lass6230/github/ros2_controllers_mecanum/install/mecanum_drive_controller/include/mecanum_drive_controller_parameters/mecanum_drive_controller_parameters.hpp
+[30.558s] -- Installing: /home/lass6230/github/ros2_controllers_mecanum/install/mecanum_drive_controller/share/mecanum_drive_controller/mecanum_drive_controller.xml
+[30.558s] -- Installing: /home/lass6230/github/ros2_controllers_mecanum/install/mecanum_drive_controller/include/mecanum_drive_controller
+[30.559s] -- Installing: /home/lass6230/github/ros2_controllers_mecanum/install/mecanum_drive_controller/include/mecanum_drive_controller/mecanum_drive_controller
+[30.559s] -- Installing: /home/lass6230/github/ros2_controllers_mecanum/install/mecanum_drive_controller/include/mecanum_drive_controller/mecanum_drive_controller/odometry.hpp
+[30.559s] -- Installing: /home/lass6230/github/ros2_controllers_mecanum/install/mecanum_drive_controller/include/mecanum_drive_controller/mecanum_drive_controller/mecanum_drive_controller.hpp
+[30.559s] -- Installing: /home/lass6230/github/ros2_controllers_mecanum/install/mecanum_drive_controller/include/mecanum_drive_controller/mecanum_drive_controller/visibility_control.h
+[30.559s] -- Installing: /home/lass6230/github/ros2_controllers_mecanum/install/mecanum_drive_controller/lib/libmecanum_drive_controller.so
+[30.569s] -- Set runtime path of "/home/lass6230/github/ros2_controllers_mecanum/install/mecanum_drive_controller/lib/libmecanum_drive_controller.so" to ""
+[30.569s] -- Installing: /home/lass6230/github/ros2_controllers_mecanum/install/mecanum_drive_controller/share/mecanum_drive_controller/environment/library_path.sh
+[30.569s] -- Installing: /home/lass6230/github/ros2_controllers_mecanum/install/mecanum_drive_controller/share/mecanum_drive_controller/environment/library_path.dsv
+[30.570s] -- Installing: /home/lass6230/github/ros2_controllers_mecanum/install/mecanum_drive_controller/share/ament_index/resource_index/package_run_dependencies/mecanum_drive_controller
+[30.570s] -- Installing: /home/lass6230/github/ros2_controllers_mecanum/install/mecanum_drive_controller/share/ament_index/resource_index/parent_prefix_path/mecanum_drive_controller
+[30.570s] -- Installing: /home/lass6230/github/ros2_controllers_mecanum/install/mecanum_drive_controller/share/mecanum_drive_controller/environment/ament_prefix_path.sh
+[30.570s] -- Installing: /home/lass6230/github/ros2_controllers_mecanum/install/mecanum_drive_controller/share/mecanum_drive_controller/environment/ament_prefix_path.dsv
+[30.570s] -- Installing: /home/lass6230/github/ros2_controllers_mecanum/install/mecanum_drive_controller/share/mecanum_drive_controller/environment/path.sh
+[30.570s] -- Installing: /home/lass6230/github/ros2_controllers_mecanum/install/mecanum_drive_controller/share/mecanum_drive_controller/environment/path.dsv
+[30.570s] -- Installing: /home/lass6230/github/ros2_controllers_mecanum/install/mecanum_drive_controller/share/mecanum_drive_controller/local_setup.bash
+[30.570s] -- Installing: /home/lass6230/github/ros2_controllers_mecanum/install/mecanum_drive_controller/share/mecanum_drive_controller/local_setup.sh
+[30.571s] -- Installing: /home/lass6230/github/ros2_controllers_mecanum/install/mecanum_drive_controller/share/mecanum_drive_controller/local_setup.zsh
+[30.571s] -- Installing: /home/lass6230/github/ros2_controllers_mecanum/install/mecanum_drive_controller/share/mecanum_drive_controller/local_setup.dsv
+[30.571s] -- Installing: /home/lass6230/github/ros2_controllers_mecanum/install/mecanum_drive_controller/share/mecanum_drive_controller/package.dsv
+[30.571s] -- Installing: /home/lass6230/github/ros2_controllers_mecanum/install/mecanum_drive_controller/share/ament_index/resource_index/packages/mecanum_drive_controller
+[30.571s] -- Installing: /home/lass6230/github/ros2_controllers_mecanum/install/mecanum_drive_controller/share/ament_index/resource_index/controller_interface__pluginlib__plugin/mecanum_drive_controller
+[30.571s] -- Installing: /home/lass6230/github/ros2_controllers_mecanum/install/mecanum_drive_controller/share/mecanum_drive_controller/cmake/export_mecanum_drive_controllerExport.cmake
+[30.572s] -- Installing: /home/lass6230/github/ros2_controllers_mecanum/install/mecanum_drive_controller/share/mecanum_drive_controller/cmake/export_mecanum_drive_controllerExport-noconfig.cmake
+[30.572s] -- Installing: /home/lass6230/github/ros2_controllers_mecanum/install/mecanum_drive_controller/share/mecanum_drive_controller/cmake/ament_cmake_export_targets-extras.cmake
+[30.572s] -- Installing: /home/lass6230/github/ros2_controllers_mecanum/install/mecanum_drive_controller/share/mecanum_drive_controller/cmake/ament_cmake_export_dependencies-extras.cmake
+[30.572s] -- Installing: /home/lass6230/github/ros2_controllers_mecanum/install/mecanum_drive_controller/share/mecanum_drive_controller/cmake/mecanum_drive_controllerConfig.cmake
+[30.572s] -- Installing: /home/lass6230/github/ros2_controllers_mecanum/install/mecanum_drive_controller/share/mecanum_drive_controller/cmake/mecanum_drive_controllerConfig-version.cmake
+[30.572s] -- Installing: /home/lass6230/github/ros2_controllers_mecanum/install/mecanum_drive_controller/share/mecanum_drive_controller/package.xml
+[30.574s] Invoked command in '/home/lass6230/github/ros2_controllers_mecanum/build/mecanum_drive_controller' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/lass6230/github/ros2_controllers_mecanum/build/mecanum_drive_controller

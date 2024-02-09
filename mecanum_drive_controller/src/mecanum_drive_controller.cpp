@@ -300,10 +300,10 @@ controller_interface::CallbackReturn MecanumDriveController::on_deactivate(
   return controller_interface::CallbackReturn::SUCCESS;
 }
 
-controller_interface::return_type MecanumDriveController::update_reference_from_subscribers(
-  const rclcpp::Time & time, const rclcpp::Duration & /*period*/)
+controller_interface::return_type MecanumDriveController::update_reference_from_subscribers()
 {
   auto current_ref = *(input_ref_.readFromRT());
+  rclcpp::Time time = get_node()->now();
   const auto age_of_last_command = time - (current_ref)->header.stamp;
 
   // send message only if there is no timeout

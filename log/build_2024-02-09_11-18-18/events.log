@@ -1,0 +1,477 @@
+[0.000000] (-) TimerEvent: {}
+[0.000688] (mecanum_drive_controller) JobQueued: {'identifier': 'mecanum_drive_controller', 'dependencies': OrderedDict()}
+[0.000773] (ros2_controllers) JobQueued: {'identifier': 'ros2_controllers', 'dependencies': OrderedDict([('mecanum_drive_controller', '/home/lass6230/github/ros2_controllers_mecanum/install/mecanum_drive_controller')])}
+[0.000857] (mecanum_drive_controller) JobStarted: {'identifier': 'mecanum_drive_controller'}
+[0.059684] (mecanum_drive_controller) JobProgress: {'identifier': 'mecanum_drive_controller', 'progress': 'cmake'}
+[0.059834] (mecanum_drive_controller) Command: {'cmd': ['/usr/bin/cmake', '/home/lass6230/github/ros2_controllers_mecanum/mecanum_drive_controller', '-DCMAKE_INSTALL_PREFIX=/home/lass6230/github/ros2_controllers_mecanum/install/mecanum_drive_controller'], 'cwd': '/home/lass6230/github/ros2_controllers_mecanum/build/mecanum_drive_controller', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('VIRTUALENVWRAPPER_WORKON_CD', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('WORKON_HOME', '/home/lass6230/.virtualenvs'), ('USER', 'lass6230'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/lass6230'), ('OLDPWD', '/home/lass6230/github'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1441'), ('SYSTEMD_EXEC_PID', '1764'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '8839'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'lass6230'), ('JOURNAL_STREAM', '8:31576'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'lass6230'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/lass6230/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/lass6230:@/tmp/.ICE-unix/1745,unix/lass6230:/tmp/.ICE-unix/1745'), ('INVOCATION_ID', 'a8f65805936845de90b4ed610ff7a889'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:8189cce5-7495-4fcb-9946-c31ee9127efe'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VIRTUALENVWRAPPER_PROJECT_FILENAME', '.project'), ('VIRTUALENVWRAPPER_HOOK_DIR', '/home/lass6230/.virtualenvs'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VIRTUALENVWRAPPER_SCRIPT', '/usr/local/bin/virtualenvwrapper.sh'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/lass6230/github/ros2_controllers_mecanum/build/mecanum_drive_controller'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.099694] (-) TimerEvent: {}
+[0.125422] (mecanum_drive_controller) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.132864] (mecanum_drive_controller) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.199816] (-) TimerEvent: {}
+[0.207896] (mecanum_drive_controller) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.216437] (mecanum_drive_controller) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.216909] (mecanum_drive_controller) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.217320] (mecanum_drive_controller) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.220129] (mecanum_drive_controller) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.7 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.299931] (-) TimerEvent: {}
+[0.386431] (mecanum_drive_controller) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter \n'}
+[0.400046] (-) TimerEvent: {}
+[0.473158] (mecanum_drive_controller) StdoutLine: {'line': b'-- Found backward_ros: 1.0.2 (/opt/ros/humble/share/backward_ros/cmake)\n'}
+[0.483172] (mecanum_drive_controller) StdoutLine: {'line': b'-- Found libdw: /usr/lib/x86_64-linux-gnu/libdw.so  \n'}
+[0.488431] (mecanum_drive_controller) StdoutLine: {'line': b'-- Could NOT find libbfd (missing: LIBBFD_LIBRARY LIBBFD_INCLUDE_DIR) \n'}
+[0.488629] (mecanum_drive_controller) StdoutLine: {'line': b'-- BACKWARD_HAS_UNWIND=1\n'}
+[0.488701] (mecanum_drive_controller) StdoutLine: {'line': b'-- BACKWARD_HAS_BACKTRACE=0\n'}
+[0.488769] (mecanum_drive_controller) StdoutLine: {'line': b'-- BACKWARD_HAS_BACKTRACE_SYMBOL=0\n'}
+[0.488833] (mecanum_drive_controller) StdoutLine: {'line': b'-- BACKWARD_HAS_DW=1\n'}
+[0.488895] (mecanum_drive_controller) StdoutLine: {'line': b'-- BACKWARD_HAS_BFD=0\n'}
+[0.489302] (mecanum_drive_controller) StdoutLine: {'line': b'-- Found Backward: /opt/ros/humble/share/backward_ros/cmake  \n'}
+[0.491152] (mecanum_drive_controller) StdoutLine: {'line': b'-- Found controller_interface: 2.37.0 (/opt/ros/humble/share/controller_interface/cmake)\n'}
+[0.500144] (-) TimerEvent: {}
+[0.529492] (mecanum_drive_controller) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.535203] (mecanum_drive_controller) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.544310] (mecanum_drive_controller) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.559104] (mecanum_drive_controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.580221] (mecanum_drive_controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.600269] (-) TimerEvent: {}
+[0.700534] (-) TimerEvent: {}
+[0.800797] (-) TimerEvent: {}
+[0.901060] (-) TimerEvent: {}
+[1.001322] (-) TimerEvent: {}
+[1.101583] (-) TimerEvent: {}
+[1.201816] (-) TimerEvent: {}
+[1.302082] (-) TimerEvent: {}
+[1.343752] (mecanum_drive_controller) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.346473] (mecanum_drive_controller) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.387658] (mecanum_drive_controller) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[1.402198] (-) TimerEvent: {}
+[1.432877] (mecanum_drive_controller) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[1.436024] (mecanum_drive_controller) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[1.447126] (mecanum_drive_controller) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[1.457765] (mecanum_drive_controller) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[1.466309] (mecanum_drive_controller) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[1.476050] (mecanum_drive_controller) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.487321] (mecanum_drive_controller) StdoutLine: {'line': b'-- Looking for C++ include pthread.h\n'}
+[1.502319] (-) TimerEvent: {}
+[1.599243] (mecanum_drive_controller) StdoutLine: {'line': b'-- Looking for C++ include pthread.h - found\n'}
+[1.599550] (mecanum_drive_controller) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.602410] (-) TimerEvent: {}
+[1.702621] (-) TimerEvent: {}
+[1.711147] (mecanum_drive_controller) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.712388] (mecanum_drive_controller) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.802709] (-) TimerEvent: {}
+[1.902965] (-) TimerEvent: {}
+[2.003222] (-) TimerEvent: {}
+[2.016985] (mecanum_drive_controller) StdoutLine: {'line': b'-- Found generate_parameter_library: 0.3.7 (/opt/ros/humble/share/generate_parameter_library/cmake)\n'}
+[2.019092] (mecanum_drive_controller) StdoutLine: {'line': b'-- Found parameter_traits: 0.3.7 (/opt/ros/humble/share/parameter_traits/cmake)\n'}
+[2.046282] (mecanum_drive_controller) StdoutLine: {'line': b'-- Found nav_msgs: 4.2.3 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[2.103331] (-) TimerEvent: {}
+[2.143568] (mecanum_drive_controller) StdoutLine: {'line': b'-- Found realtime_tools: 2.5.0 (/opt/ros/humble/share/realtime_tools/cmake)\n'}
+[2.189304] (mecanum_drive_controller) StdoutLine: {'line': b'-- Found std_srvs: 4.2.3 (/opt/ros/humble/share/std_srvs/cmake)\n'}
+[2.203433] (-) TimerEvent: {}
+[2.208768] (mecanum_drive_controller) StdoutLine: {'line': b'-- Found tf2: 0.25.5 (/opt/ros/humble/share/tf2/cmake)\n'}
+[2.218161] (mecanum_drive_controller) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.25.5 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)\n'}
+[2.227710] (mecanum_drive_controller) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[2.229074] (mecanum_drive_controller) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[2.229540] (mecanum_drive_controller) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[2.303556] (-) TimerEvent: {}
+[2.403814] (-) TimerEvent: {}
+[2.504072] (-) TimerEvent: {}
+[2.604330] (-) TimerEvent: {}
+[2.704567] (-) TimerEvent: {}
+[2.799273] (mecanum_drive_controller) StdoutLine: {'line': b'-- Found ament_cmake_gmock: 1.3.7 (/opt/ros/humble/share/ament_cmake_gmock/cmake)\n'}
+[2.801133] (mecanum_drive_controller) StdoutLine: {'line': b'-- Found controller_manager: 2.37.0 (/opt/ros/humble/share/controller_manager/cmake)\n'}
+[2.804659] (-) TimerEvent: {}
+[2.904880] (-) TimerEvent: {}
+[3.005137] (-) TimerEvent: {}
+[3.105397] (-) TimerEvent: {}
+[3.141869] (mecanum_drive_controller) StdoutLine: {'line': b'-- Found ros2_control_test_assets: 2.37.0 (/opt/ros/humble/share/ros2_control_test_assets/cmake)\n'}
+[3.144665] (mecanum_drive_controller) StdoutLine: {'line': b"-- Found gmock sources under '/opt/ros/humble/src/gmock_vendor': C++ tests using 'Google Mock' will be built\n"}
+[3.185856] (mecanum_drive_controller) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[3.192838] (mecanum_drive_controller) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[3.205519] (-) TimerEvent: {}
+[3.285820] (mecanum_drive_controller) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[3.293850] (mecanum_drive_controller) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[3.294199] (mecanum_drive_controller) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[3.294851] (mecanum_drive_controller) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[3.298901] (mecanum_drive_controller) StdoutLine: {'line': b'-- Found ament_cmake_gtest: 1.3.7 (/opt/ros/humble/share/ament_cmake_gtest/cmake)\n'}
+[3.299873] (mecanum_drive_controller) StdoutLine: {'line': b"-- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built\n"}
+[3.305622] (-) TimerEvent: {}
+[3.405862] (-) TimerEvent: {}
+[3.506121] (-) TimerEvent: {}
+[3.606382] (-) TimerEvent: {}
+[3.706600] (-) TimerEvent: {}
+[3.806858] (-) TimerEvent: {}
+[3.907118] (-) TimerEvent: {}
+[4.007379] (-) TimerEvent: {}
+[4.107636] (-) TimerEvent: {}
+[4.207896] (-) TimerEvent: {}
+[4.308181] (-) TimerEvent: {}
+[4.408439] (-) TimerEvent: {}
+[4.508698] (-) TimerEvent: {}
+[4.608952] (-) TimerEvent: {}
+[4.686766] (mecanum_drive_controller) StdoutLine: {'line': b'-- Configuring done\n'}
+[4.709080] (-) TimerEvent: {}
+[4.809340] (-) TimerEvent: {}
+[4.814793] (mecanum_drive_controller) StdoutLine: {'line': b'-- Generating done\n'}
+[4.817540] (mecanum_drive_controller) StdoutLine: {'line': b'-- Build files have been written to: /home/lass6230/github/ros2_controllers_mecanum/build/mecanum_drive_controller\n'}
+[4.831577] (mecanum_drive_controller) CommandEnded: {'returncode': 0}
+[4.832305] (mecanum_drive_controller) JobProgress: {'identifier': 'mecanum_drive_controller', 'progress': 'build'}
+[4.833943] (mecanum_drive_controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/lass6230/github/ros2_controllers_mecanum/build/mecanum_drive_controller', '--', '-j4', '-l4'], 'cwd': '/home/lass6230/github/ros2_controllers_mecanum/build/mecanum_drive_controller', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('VIRTUALENVWRAPPER_WORKON_CD', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('WORKON_HOME', '/home/lass6230/.virtualenvs'), ('USER', 'lass6230'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/lass6230'), ('OLDPWD', '/home/lass6230/github'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1441'), ('SYSTEMD_EXEC_PID', '1764'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '8839'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'lass6230'), ('JOURNAL_STREAM', '8:31576'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'lass6230'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/lass6230/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/lass6230:@/tmp/.ICE-unix/1745,unix/lass6230:/tmp/.ICE-unix/1745'), ('INVOCATION_ID', 'a8f65805936845de90b4ed610ff7a889'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:8189cce5-7495-4fcb-9946-c31ee9127efe'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VIRTUALENVWRAPPER_PROJECT_FILENAME', '.project'), ('VIRTUALENVWRAPPER_HOOK_DIR', '/home/lass6230/.virtualenvs'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VIRTUALENVWRAPPER_SCRIPT', '/usr/local/bin/virtualenvwrapper.sh'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/lass6230/github/ros2_controllers_mecanum/build/mecanum_drive_controller'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[4.880966] (mecanum_drive_controller) StdoutLine: {'line': b'[ 13%] \x1b[34m\x1b[1mRunning `/opt/ros/humble/bin/generate_parameter_library_cpp /home/lass6230/github/ros2_controllers_mecanum/build/mecanum_drive_controller/mecanum_drive_controller_parameters/include//mecanum_drive_controller_parameters.hpp /home/lass6230/github/ros2_controllers_mecanum/mecanum_drive_controller/src/mecanum_drive_controller.yaml `\x1b[0m\n'}
+[4.881180] (mecanum_drive_controller) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding CXX object gmock/CMakeFiles/gmock.dir/opt/ros/humble/src/gtest_vendor/src/gtest-all.cc.o\x1b[0m\n'}
+[4.881358] (mecanum_drive_controller) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object gmock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o\x1b[0m\n'}
+[4.882896] (mecanum_drive_controller) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object gmock/CMakeFiles/gmock.dir/src/gmock-all.cc.o\x1b[0m\n'}
+[4.909432] (-) TimerEvent: {}
+[5.009689] (-) TimerEvent: {}
+[5.109951] (-) TimerEvent: {}
+[5.210217] (-) TimerEvent: {}
+[5.310492] (-) TimerEvent: {}
+[5.314573] (mecanum_drive_controller) StdoutLine: {'line': b'[ 26%] Built target mecanum_drive_controller_parameters\n'}
+[5.335373] (mecanum_drive_controller) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/mecanum_drive_controller.dir/src/mecanum_drive_controller.cpp.o\x1b[0m\n'}
+[5.410589] (-) TimerEvent: {}
+[5.510941] (-) TimerEvent: {}
+[5.611284] (-) TimerEvent: {}
+[5.711634] (-) TimerEvent: {}
+[5.811999] (-) TimerEvent: {}
+[5.912271] (-) TimerEvent: {}
+[6.012555] (-) TimerEvent: {}
+[6.112834] (-) TimerEvent: {}
+[6.213109] (-) TimerEvent: {}
+[6.262233] (mecanum_drive_controller) StdoutLine: {'line': b'[ 40%] \x1b[32m\x1b[1mLinking CXX static library libgmock_main.a\x1b[0m\n'}
+[6.295381] (mecanum_drive_controller) StdoutLine: {'line': b'[ 40%] Built target gmock_main\n'}
+[6.305057] (mecanum_drive_controller) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/mecanum_drive_controller.dir/src/odometry.cpp.o\x1b[0m\n'}
+[6.313206] (-) TimerEvent: {}
+[6.413471] (-) TimerEvent: {}
+[6.513751] (-) TimerEvent: {}
+[6.614002] (-) TimerEvent: {}
+[6.714258] (-) TimerEvent: {}
+[6.814510] (-) TimerEvent: {}
+[6.914767] (-) TimerEvent: {}
+[7.015024] (-) TimerEvent: {}
+[7.115300] (-) TimerEvent: {}
+[7.217776] (-) TimerEvent: {}
+[7.318056] (-) TimerEvent: {}
+[7.418339] (-) TimerEvent: {}
+[7.518614] (-) TimerEvent: {}
+[7.618880] (-) TimerEvent: {}
+[7.719142] (-) TimerEvent: {}
+[7.819407] (-) TimerEvent: {}
+[7.919696] (-) TimerEvent: {}
+[8.020078] (-) TimerEvent: {}
+[8.120453] (-) TimerEvent: {}
+[8.220830] (-) TimerEvent: {}
+[8.321130] (-) TimerEvent: {}
+[8.421588] (-) TimerEvent: {}
+[8.430623] (mecanum_drive_controller) StdoutLine: {'line': b'[ 53%] \x1b[32m\x1b[1mLinking CXX static library libgmock.a\x1b[0m\n'}
+[8.502799] (mecanum_drive_controller) StdoutLine: {'line': b'[ 53%] Built target gmock\n'}
+[8.521707] (-) TimerEvent: {}
+[8.523288] (mecanum_drive_controller) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/test_load_mecanum_drive_controller.dir/test/test_load_mecanum_drive_controller.cpp.o\x1b[0m\n'}
+[8.621822] (-) TimerEvent: {}
+[8.722190] (-) TimerEvent: {}
+[8.822571] (-) TimerEvent: {}
+[8.922841] (-) TimerEvent: {}
+[9.023185] (-) TimerEvent: {}
+[9.123553] (-) TimerEvent: {}
+[9.223928] (-) TimerEvent: {}
+[9.324296] (-) TimerEvent: {}
+[9.424649] (-) TimerEvent: {}
+[9.524996] (-) TimerEvent: {}
+[9.625406] (-) TimerEvent: {}
+[9.725699] (-) TimerEvent: {}
+[9.825993] (-) TimerEvent: {}
+[9.926283] (-) TimerEvent: {}
+[10.026604] (-) TimerEvent: {}
+[10.126892] (-) TimerEvent: {}
+[10.227185] (-) TimerEvent: {}
+[10.327476] (-) TimerEvent: {}
+[10.427799] (-) TimerEvent: {}
+[10.528091] (-) TimerEvent: {}
+[10.628382] (-) TimerEvent: {}
+[10.728679] (-) TimerEvent: {}
+[10.828979] (-) TimerEvent: {}
+[10.929258] (-) TimerEvent: {}
+[11.029537] (-) TimerEvent: {}
+[11.129811] (-) TimerEvent: {}
+[11.230093] (-) TimerEvent: {}
+[11.330376] (-) TimerEvent: {}
+[11.430609] (-) TimerEvent: {}
+[11.530879] (-) TimerEvent: {}
+[11.631154] (-) TimerEvent: {}
+[11.731429] (-) TimerEvent: {}
+[11.831706] (-) TimerEvent: {}
+[11.931984] (-) TimerEvent: {}
+[12.032257] (-) TimerEvent: {}
+[12.132540] (-) TimerEvent: {}
+[12.232818] (-) TimerEvent: {}
+[12.333123] (-) TimerEvent: {}
+[12.433396] (-) TimerEvent: {}
+[12.533667] (-) TimerEvent: {}
+[12.633956] (-) TimerEvent: {}
+[12.734231] (-) TimerEvent: {}
+[12.834504] (-) TimerEvent: {}
+[12.934780] (-) TimerEvent: {}
+[13.035049] (-) TimerEvent: {}
+[13.135321] (-) TimerEvent: {}
+[13.235595] (-) TimerEvent: {}
+[13.335894] (-) TimerEvent: {}
+[13.436170] (-) TimerEvent: {}
+[13.536447] (-) TimerEvent: {}
+[13.636709] (-) TimerEvent: {}
+[13.736947] (-) TimerEvent: {}
+[13.829137] (mecanum_drive_controller) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX executable test_load_mecanum_drive_controller\x1b[0m\n'}
+[13.837069] (-) TimerEvent: {}
+[13.937384] (-) TimerEvent: {}
+[14.037689] (-) TimerEvent: {}
+[14.137989] (-) TimerEvent: {}
+[14.205878] (mecanum_drive_controller) StdoutLine: {'line': b'[ 66%] Built target test_load_mecanum_drive_controller\n'}
+[14.238108] (-) TimerEvent: {}
+[14.338369] (-) TimerEvent: {}
+[14.438606] (-) TimerEvent: {}
+[14.538862] (-) TimerEvent: {}
+[14.639094] (-) TimerEvent: {}
+[14.739412] (-) TimerEvent: {}
+[14.839677] (-) TimerEvent: {}
+[14.939943] (-) TimerEvent: {}
+[15.040204] (-) TimerEvent: {}
+[15.140468] (-) TimerEvent: {}
+[15.240702] (-) TimerEvent: {}
+[15.340968] (-) TimerEvent: {}
+[15.441228] (-) TimerEvent: {}
+[15.541490] (-) TimerEvent: {}
+[15.641752] (-) TimerEvent: {}
+[15.742017] (-) TimerEvent: {}
+[15.842286] (-) TimerEvent: {}
+[15.942570] (-) TimerEvent: {}
+[16.042841] (-) TimerEvent: {}
+[16.143124] (-) TimerEvent: {}
+[16.243409] (-) TimerEvent: {}
+[16.273612] (mecanum_drive_controller) StdoutLine: {'line': b'[ 73%] \x1b[32m\x1b[1mLinking CXX shared library libmecanum_drive_controller.so\x1b[0m\n'}
+[16.343535] (-) TimerEvent: {}
+[16.443809] (-) TimerEvent: {}
+[16.544104] (-) TimerEvent: {}
+[16.644403] (-) TimerEvent: {}
+[16.744703] (-) TimerEvent: {}
+[16.844973] (-) TimerEvent: {}
+[16.945245] (-) TimerEvent: {}
+[16.953219] (mecanum_drive_controller) StdoutLine: {'line': b'[ 73%] Built target mecanum_drive_controller\n'}
+[16.972651] (mecanum_drive_controller) StdoutLine: {'line': b'[ 86%] \x1b[32mBuilding CXX object CMakeFiles/test_mecanum_drive_controller_preceeding.dir/test/test_mecanum_drive_controller_preceeding.cpp.o\x1b[0m\n'}
+[16.972811] (mecanum_drive_controller) StdoutLine: {'line': b'[ 86%] \x1b[32mBuilding CXX object CMakeFiles/test_mecanum_drive_controller.dir/test/test_mecanum_drive_controller.cpp.o\x1b[0m\n'}
+[17.045352] (-) TimerEvent: {}
+[17.145636] (-) TimerEvent: {}
+[17.245922] (-) TimerEvent: {}
+[17.346210] (-) TimerEvent: {}
+[17.446497] (-) TimerEvent: {}
+[17.546820] (-) TimerEvent: {}
+[17.647188] (-) TimerEvent: {}
+[17.747481] (-) TimerEvent: {}
+[17.847791] (-) TimerEvent: {}
+[17.948085] (-) TimerEvent: {}
+[18.048378] (-) TimerEvent: {}
+[18.148678] (-) TimerEvent: {}
+[18.249044] (-) TimerEvent: {}
+[18.349347] (-) TimerEvent: {}
+[18.449653] (-) TimerEvent: {}
+[18.549944] (-) TimerEvent: {}
+[18.650245] (-) TimerEvent: {}
+[18.750578] (-) TimerEvent: {}
+[18.850879] (-) TimerEvent: {}
+[18.951170] (-) TimerEvent: {}
+[19.051467] (-) TimerEvent: {}
+[19.151760] (-) TimerEvent: {}
+[19.252057] (-) TimerEvent: {}
+[19.352345] (-) TimerEvent: {}
+[19.452636] (-) TimerEvent: {}
+[19.552955] (-) TimerEvent: {}
+[19.653252] (-) TimerEvent: {}
+[19.753517] (-) TimerEvent: {}
+[19.853888] (-) TimerEvent: {}
+[19.954185] (-) TimerEvent: {}
+[20.054607] (-) TimerEvent: {}
+[20.154892] (-) TimerEvent: {}
+[20.255282] (-) TimerEvent: {}
+[20.355580] (-) TimerEvent: {}
+[20.455882] (-) TimerEvent: {}
+[20.556144] (-) TimerEvent: {}
+[20.656446] (-) TimerEvent: {}
+[20.756740] (-) TimerEvent: {}
+[20.857045] (-) TimerEvent: {}
+[20.957337] (-) TimerEvent: {}
+[21.057629] (-) TimerEvent: {}
+[21.157930] (-) TimerEvent: {}
+[21.258243] (-) TimerEvent: {}
+[21.358584] (-) TimerEvent: {}
+[21.458866] (-) TimerEvent: {}
+[21.559151] (-) TimerEvent: {}
+[21.659440] (-) TimerEvent: {}
+[21.759733] (-) TimerEvent: {}
+[21.860021] (-) TimerEvent: {}
+[21.960311] (-) TimerEvent: {}
+[22.060601] (-) TimerEvent: {}
+[22.160896] (-) TimerEvent: {}
+[22.261184] (-) TimerEvent: {}
+[22.361471] (-) TimerEvent: {}
+[22.461759] (-) TimerEvent: {}
+[22.562045] (-) TimerEvent: {}
+[22.662335] (-) TimerEvent: {}
+[22.762617] (-) TimerEvent: {}
+[22.862904] (-) TimerEvent: {}
+[22.963187] (-) TimerEvent: {}
+[23.063467] (-) TimerEvent: {}
+[23.163751] (-) TimerEvent: {}
+[23.264040] (-) TimerEvent: {}
+[23.364325] (-) TimerEvent: {}
+[23.464609] (-) TimerEvent: {}
+[23.564895] (-) TimerEvent: {}
+[23.665178] (-) TimerEvent: {}
+[23.765495] (-) TimerEvent: {}
+[23.865785] (-) TimerEvent: {}
+[23.966087] (-) TimerEvent: {}
+[24.027745] (mecanum_drive_controller) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking CXX executable test_mecanum_drive_controller_preceeding\x1b[0m\n'}
+[24.066184] (-) TimerEvent: {}
+[24.166512] (-) TimerEvent: {}
+[24.266891] (-) TimerEvent: {}
+[24.367223] (-) TimerEvent: {}
+[24.467573] (-) TimerEvent: {}
+[24.567928] (-) TimerEvent: {}
+[24.668225] (-) TimerEvent: {}
+[24.768540] (-) TimerEvent: {}
+[24.786823] (mecanum_drive_controller) StdoutLine: {'line': b'[ 93%] Built target test_mecanum_drive_controller_preceeding\n'}
+[24.868658] (-) TimerEvent: {}
+[24.968919] (-) TimerEvent: {}
+[25.069187] (-) TimerEvent: {}
+[25.169458] (-) TimerEvent: {}
+[25.269722] (-) TimerEvent: {}
+[25.369984] (-) TimerEvent: {}
+[25.470249] (-) TimerEvent: {}
+[25.570633] (-) TimerEvent: {}
+[25.670897] (-) TimerEvent: {}
+[25.771162] (-) TimerEvent: {}
+[25.871426] (-) TimerEvent: {}
+[25.971689] (-) TimerEvent: {}
+[26.071950] (-) TimerEvent: {}
+[26.172213] (-) TimerEvent: {}
+[26.272475] (-) TimerEvent: {}
+[26.372738] (-) TimerEvent: {}
+[26.472998] (-) TimerEvent: {}
+[26.573263] (-) TimerEvent: {}
+[26.673530] (-) TimerEvent: {}
+[26.773796] (-) TimerEvent: {}
+[26.874062] (-) TimerEvent: {}
+[26.974325] (-) TimerEvent: {}
+[27.074590] (-) TimerEvent: {}
+[27.174847] (-) TimerEvent: {}
+[27.275111] (-) TimerEvent: {}
+[27.375376] (-) TimerEvent: {}
+[27.475642] (-) TimerEvent: {}
+[27.575906] (-) TimerEvent: {}
+[27.676169] (-) TimerEvent: {}
+[27.776431] (-) TimerEvent: {}
+[27.876696] (-) TimerEvent: {}
+[27.976956] (-) TimerEvent: {}
+[28.077226] (-) TimerEvent: {}
+[28.177517] (-) TimerEvent: {}
+[28.277778] (-) TimerEvent: {}
+[28.378037] (-) TimerEvent: {}
+[28.478296] (-) TimerEvent: {}
+[28.578605] (-) TimerEvent: {}
+[28.678890] (-) TimerEvent: {}
+[28.779152] (-) TimerEvent: {}
+[28.879452] (-) TimerEvent: {}
+[28.979726] (-) TimerEvent: {}
+[29.079996] (-) TimerEvent: {}
+[29.180270] (-) TimerEvent: {}
+[29.280581] (-) TimerEvent: {}
+[29.380854] (-) TimerEvent: {}
+[29.435135] (mecanum_drive_controller) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable test_mecanum_drive_controller\x1b[0m\n'}
+[29.480974] (-) TimerEvent: {}
+[29.581268] (-) TimerEvent: {}
+[29.681577] (-) TimerEvent: {}
+[29.781875] (-) TimerEvent: {}
+[29.882173] (-) TimerEvent: {}
+[29.982504] (-) TimerEvent: {}
+[30.082865] (-) TimerEvent: {}
+[30.183176] (-) TimerEvent: {}
+[30.283440] (-) TimerEvent: {}
+[30.383710] (-) TimerEvent: {}
+[30.483996] (-) TimerEvent: {}
+[30.495498] (mecanum_drive_controller) StdoutLine: {'line': b'[100%] Built target test_mecanum_drive_controller\n'}
+[30.505838] (mecanum_drive_controller) CommandEnded: {'returncode': 0}
+[30.543390] (mecanum_drive_controller) JobProgress: {'identifier': 'mecanum_drive_controller', 'progress': 'install'}
+[30.551603] (mecanum_drive_controller) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/lass6230/github/ros2_controllers_mecanum/build/mecanum_drive_controller'], 'cwd': '/home/lass6230/github/ros2_controllers_mecanum/build/mecanum_drive_controller', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('VIRTUALENVWRAPPER_WORKON_CD', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('WORKON_HOME', '/home/lass6230/.virtualenvs'), ('USER', 'lass6230'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/lass6230'), ('OLDPWD', '/home/lass6230/github'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1441'), ('SYSTEMD_EXEC_PID', '1764'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '8839'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'lass6230'), ('JOURNAL_STREAM', '8:31576'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'lass6230'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/lass6230/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/lass6230:@/tmp/.ICE-unix/1745,unix/lass6230:/tmp/.ICE-unix/1745'), ('INVOCATION_ID', 'a8f65805936845de90b4ed610ff7a889'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:8189cce5-7495-4fcb-9946-c31ee9127efe'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VIRTUALENVWRAPPER_PROJECT_FILENAME', '.project'), ('VIRTUALENVWRAPPER_HOOK_DIR', '/home/lass6230/.virtualenvs'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VIRTUALENVWRAPPER_SCRIPT', '/usr/local/bin/virtualenvwrapper.sh'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/lass6230/github/ros2_controllers_mecanum/build/mecanum_drive_controller'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[30.558144] (mecanum_drive_controller) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[30.558435] (mecanum_drive_controller) StdoutLine: {'line': b'-- Installing: /home/lass6230/github/ros2_controllers_mecanum/install/mecanum_drive_controller/include/mecanum_drive_controller_parameters\n'}
+[30.558520] (mecanum_drive_controller) StdoutLine: {'line': b'-- Installing: /home/lass6230/github/ros2_controllers_mecanum/install/mecanum_drive_controller/include/mecanum_drive_controller_parameters/mecanum_drive_controller_parameters.hpp\n'}
+[30.558772] (mecanum_drive_controller) StdoutLine: {'line': b'-- Installing: /home/lass6230/github/ros2_controllers_mecanum/install/mecanum_drive_controller/share/mecanum_drive_controller/mecanum_drive_controller.xml\n'}
+[30.559131] (mecanum_drive_controller) StdoutLine: {'line': b'-- Installing: /home/lass6230/github/ros2_controllers_mecanum/install/mecanum_drive_controller/include/mecanum_drive_controller\n'}
+[30.559352] (mecanum_drive_controller) StdoutLine: {'line': b'-- Installing: /home/lass6230/github/ros2_controllers_mecanum/install/mecanum_drive_controller/include/mecanum_drive_controller/mecanum_drive_controller\n'}
+[30.559549] (mecanum_drive_controller) StdoutLine: {'line': b'-- Installing: /home/lass6230/github/ros2_controllers_mecanum/install/mecanum_drive_controller/include/mecanum_drive_controller/mecanum_drive_controller/odometry.hpp\n'}
+[30.559621] (mecanum_drive_controller) StdoutLine: {'line': b'-- Installing: /home/lass6230/github/ros2_controllers_mecanum/install/mecanum_drive_controller/include/mecanum_drive_controller/mecanum_drive_controller/mecanum_drive_controller.hpp\n'}
+[30.559684] (mecanum_drive_controller) StdoutLine: {'line': b'-- Installing: /home/lass6230/github/ros2_controllers_mecanum/install/mecanum_drive_controller/include/mecanum_drive_controller/mecanum_drive_controller/visibility_control.h\n'}
+[30.559843] (mecanum_drive_controller) StdoutLine: {'line': b'-- Installing: /home/lass6230/github/ros2_controllers_mecanum/install/mecanum_drive_controller/lib/libmecanum_drive_controller.so\n'}
+[30.569975] (mecanum_drive_controller) StdoutLine: {'line': b'-- Set runtime path of "/home/lass6230/github/ros2_controllers_mecanum/install/mecanum_drive_controller/lib/libmecanum_drive_controller.so" to ""\n'}
+[30.570122] (mecanum_drive_controller) StdoutLine: {'line': b'-- Installing: /home/lass6230/github/ros2_controllers_mecanum/install/mecanum_drive_controller/share/mecanum_drive_controller/environment/library_path.sh\n'}
+[30.570255] (mecanum_drive_controller) StdoutLine: {'line': b'-- Installing: /home/lass6230/github/ros2_controllers_mecanum/install/mecanum_drive_controller/share/mecanum_drive_controller/environment/library_path.dsv\n'}
+[30.570365] (mecanum_drive_controller) StdoutLine: {'line': b'-- Installing: /home/lass6230/github/ros2_controllers_mecanum/install/mecanum_drive_controller/share/ament_index/resource_index/package_run_dependencies/mecanum_drive_controller\n'}
+[30.570489] (mecanum_drive_controller) StdoutLine: {'line': b'-- Installing: /home/lass6230/github/ros2_controllers_mecanum/install/mecanum_drive_controller/share/ament_index/resource_index/parent_prefix_path/mecanum_drive_controller\n'}
+[30.570742] (mecanum_drive_controller) StdoutLine: {'line': b'-- Installing: /home/lass6230/github/ros2_controllers_mecanum/install/mecanum_drive_controller/share/mecanum_drive_controller/environment/ament_prefix_path.sh\n'}
+[30.570944] (mecanum_drive_controller) StdoutLine: {'line': b'-- Installing: /home/lass6230/github/ros2_controllers_mecanum/install/mecanum_drive_controller/share/mecanum_drive_controller/environment/ament_prefix_path.dsv\n'}
+[30.571029] (mecanum_drive_controller) StdoutLine: {'line': b'-- Installing: /home/lass6230/github/ros2_controllers_mecanum/install/mecanum_drive_controller/share/mecanum_drive_controller/environment/path.sh\n'}
+[30.571120] (mecanum_drive_controller) StdoutLine: {'line': b'-- Installing: /home/lass6230/github/ros2_controllers_mecanum/install/mecanum_drive_controller/share/mecanum_drive_controller/environment/path.dsv\n'}
+[30.571217] (mecanum_drive_controller) StdoutLine: {'line': b'-- Installing: /home/lass6230/github/ros2_controllers_mecanum/install/mecanum_drive_controller/share/mecanum_drive_controller/local_setup.bash\n'}
+[30.571304] (mecanum_drive_controller) StdoutLine: {'line': b'-- Installing: /home/lass6230/github/ros2_controllers_mecanum/install/mecanum_drive_controller/share/mecanum_drive_controller/local_setup.sh\n'}
+[30.571407] (mecanum_drive_controller) StdoutLine: {'line': b'-- Installing: /home/lass6230/github/ros2_controllers_mecanum/install/mecanum_drive_controller/share/mecanum_drive_controller/local_setup.zsh\n'}
+[30.571533] (mecanum_drive_controller) StdoutLine: {'line': b'-- Installing: /home/lass6230/github/ros2_controllers_mecanum/install/mecanum_drive_controller/share/mecanum_drive_controller/local_setup.dsv\n'}
+[30.571662] (mecanum_drive_controller) StdoutLine: {'line': b'-- Installing: /home/lass6230/github/ros2_controllers_mecanum/install/mecanum_drive_controller/share/mecanum_drive_controller/package.dsv\n'}
+[30.571827] (mecanum_drive_controller) StdoutLine: {'line': b'-- Installing: /home/lass6230/github/ros2_controllers_mecanum/install/mecanum_drive_controller/share/ament_index/resource_index/packages/mecanum_drive_controller\n'}
+[30.572023] (mecanum_drive_controller) StdoutLine: {'line': b'-- Installing: /home/lass6230/github/ros2_controllers_mecanum/install/mecanum_drive_controller/share/ament_index/resource_index/controller_interface__pluginlib__plugin/mecanum_drive_controller\n'}
+[30.572208] (mecanum_drive_controller) StdoutLine: {'line': b'-- Installing: /home/lass6230/github/ros2_controllers_mecanum/install/mecanum_drive_controller/share/mecanum_drive_controller/cmake/export_mecanum_drive_controllerExport.cmake\n'}
+[30.572402] (mecanum_drive_controller) StdoutLine: {'line': b'-- Installing: /home/lass6230/github/ros2_controllers_mecanum/install/mecanum_drive_controller/share/mecanum_drive_controller/cmake/export_mecanum_drive_controllerExport-noconfig.cmake\n'}
+[30.572515] (mecanum_drive_controller) StdoutLine: {'line': b'-- Installing: /home/lass6230/github/ros2_controllers_mecanum/install/mecanum_drive_controller/share/mecanum_drive_controller/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[30.572616] (mecanum_drive_controller) StdoutLine: {'line': b'-- Installing: /home/lass6230/github/ros2_controllers_mecanum/install/mecanum_drive_controller/share/mecanum_drive_controller/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[30.572791] (mecanum_drive_controller) StdoutLine: {'line': b'-- Installing: /home/lass6230/github/ros2_controllers_mecanum/install/mecanum_drive_controller/share/mecanum_drive_controller/cmake/mecanum_drive_controllerConfig.cmake\n'}
+[30.572887] (mecanum_drive_controller) StdoutLine: {'line': b'-- Installing: /home/lass6230/github/ros2_controllers_mecanum/install/mecanum_drive_controller/share/mecanum_drive_controller/cmake/mecanum_drive_controllerConfig-version.cmake\n'}
+[30.572972] (mecanum_drive_controller) StdoutLine: {'line': b'-- Installing: /home/lass6230/github/ros2_controllers_mecanum/install/mecanum_drive_controller/share/mecanum_drive_controller/package.xml\n'}
+[30.574645] (mecanum_drive_controller) CommandEnded: {'returncode': 0}
+[30.584695] (-) TimerEvent: {}
+[30.684937] (-) TimerEvent: {}
+[30.774494] (mecanum_drive_controller) JobEnded: {'identifier': 'mecanum_drive_controller', 'rc': 0}
+[30.775761] (ros2_controllers) JobStarted: {'identifier': 'ros2_controllers'}
+[30.785042] (-) TimerEvent: {}
+[30.831813] (ros2_controllers) JobProgress: {'identifier': 'ros2_controllers', 'progress': 'cmake'}
+[30.832977] (ros2_controllers) Command: {'cmd': ['/usr/bin/cmake', '/home/lass6230/github/ros2_controllers_mecanum/ros2_controllers', '-DCMAKE_INSTALL_PREFIX=/home/lass6230/github/ros2_controllers_mecanum/install/ros2_controllers'], 'cwd': '/home/lass6230/github/ros2_controllers_mecanum/build/ros2_controllers', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('VIRTUALENVWRAPPER_WORKON_CD', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('WORKON_HOME', '/home/lass6230/.virtualenvs'), ('USER', 'lass6230'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/lass6230/github/ros2_controllers_mecanum/install/mecanum_drive_controller/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/lass6230'), ('OLDPWD', '/home/lass6230/github'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1441'), ('SYSTEMD_EXEC_PID', '1764'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '8839'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'lass6230'), ('JOURNAL_STREAM', '8:31576'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'lass6230'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/lass6230/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/lass6230:@/tmp/.ICE-unix/1745,unix/lass6230:/tmp/.ICE-unix/1745'), ('INVOCATION_ID', 'a8f65805936845de90b4ed610ff7a889'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/lass6230/github/ros2_controllers_mecanum/install/mecanum_drive_controller:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:8189cce5-7495-4fcb-9946-c31ee9127efe'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VIRTUALENVWRAPPER_PROJECT_FILENAME', '.project'), ('VIRTUALENVWRAPPER_HOOK_DIR', '/home/lass6230/.virtualenvs'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VIRTUALENVWRAPPER_SCRIPT', '/usr/local/bin/virtualenvwrapper.sh'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/lass6230/github/ros2_controllers_mecanum/build/ros2_controllers'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/lass6230/github/ros2_controllers_mecanum/install/mecanum_drive_controller:/opt/ros/humble')]), 'shell': False}
+[30.847425] (ros2_controllers) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.7 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[30.885166] (-) TimerEvent: {}
+[30.985434] (-) TimerEvent: {}
+[31.037119] (ros2_controllers) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter \n'}
+[31.085519] (-) TimerEvent: {}
+[31.185789] (-) TimerEvent: {}
+[31.199345] (ros2_controllers) StdoutLine: {'line': b'-- Configuring done\n'}
+[31.201656] (ros2_controllers) StdoutLine: {'line': b'-- Generating done\n'}
+[31.202387] (ros2_controllers) StdoutLine: {'line': b'-- Build files have been written to: /home/lass6230/github/ros2_controllers_mecanum/build/ros2_controllers\n'}
+[31.204691] (ros2_controllers) CommandEnded: {'returncode': 0}
+[31.205240] (ros2_controllers) JobProgress: {'identifier': 'ros2_controllers', 'progress': 'build'}
+[31.206369] (ros2_controllers) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/lass6230/github/ros2_controllers_mecanum/build/ros2_controllers', '--', '-j4', '-l4'], 'cwd': '/home/lass6230/github/ros2_controllers_mecanum/build/ros2_controllers', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('VIRTUALENVWRAPPER_WORKON_CD', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('WORKON_HOME', '/home/lass6230/.virtualenvs'), ('USER', 'lass6230'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/lass6230/github/ros2_controllers_mecanum/install/mecanum_drive_controller/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/lass6230'), ('OLDPWD', '/home/lass6230/github'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1441'), ('SYSTEMD_EXEC_PID', '1764'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '8839'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'lass6230'), ('JOURNAL_STREAM', '8:31576'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'lass6230'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/lass6230/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/lass6230:@/tmp/.ICE-unix/1745,unix/lass6230:/tmp/.ICE-unix/1745'), ('INVOCATION_ID', 'a8f65805936845de90b4ed610ff7a889'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/lass6230/github/ros2_controllers_mecanum/install/mecanum_drive_controller:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:8189cce5-7495-4fcb-9946-c31ee9127efe'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VIRTUALENVWRAPPER_PROJECT_FILENAME', '.project'), ('VIRTUALENVWRAPPER_HOOK_DIR', '/home/lass6230/.virtualenvs'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VIRTUALENVWRAPPER_SCRIPT', '/usr/local/bin/virtualenvwrapper.sh'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/lass6230/github/ros2_controllers_mecanum/build/ros2_controllers'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/lass6230/github/ros2_controllers_mecanum/install/mecanum_drive_controller:/opt/ros/humble')]), 'shell': False}
+[31.239141] (ros2_controllers) CommandEnded: {'returncode': 0}
+[31.258412] (ros2_controllers) JobProgress: {'identifier': 'ros2_controllers', 'progress': 'install'}
+[31.259111] (ros2_controllers) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/lass6230/github/ros2_controllers_mecanum/build/ros2_controllers'], 'cwd': '/home/lass6230/github/ros2_controllers_mecanum/build/ros2_controllers', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('VIRTUALENVWRAPPER_WORKON_CD', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('WORKON_HOME', '/home/lass6230/.virtualenvs'), ('USER', 'lass6230'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/lass6230/github/ros2_controllers_mecanum/install/mecanum_drive_controller/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/lass6230'), ('OLDPWD', '/home/lass6230/github'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1441'), ('SYSTEMD_EXEC_PID', '1764'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '8839'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'lass6230'), ('JOURNAL_STREAM', '8:31576'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'lass6230'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/lass6230/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/lass6230:@/tmp/.ICE-unix/1745,unix/lass6230:/tmp/.ICE-unix/1745'), ('INVOCATION_ID', 'a8f65805936845de90b4ed610ff7a889'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/lass6230/github/ros2_controllers_mecanum/install/mecanum_drive_controller:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:8189cce5-7495-4fcb-9946-c31ee9127efe'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VIRTUALENVWRAPPER_PROJECT_FILENAME', '.project'), ('VIRTUALENVWRAPPER_HOOK_DIR', '/home/lass6230/.virtualenvs'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VIRTUALENVWRAPPER_SCRIPT', '/usr/local/bin/virtualenvwrapper.sh'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/lass6230/github/ros2_controllers_mecanum/build/ros2_controllers'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/lass6230/github/ros2_controllers_mecanum/install/mecanum_drive_controller:/opt/ros/humble')]), 'shell': False}
+[31.265951] (ros2_controllers) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[31.266209] (ros2_controllers) StdoutLine: {'line': b'-- Installing: /home/lass6230/github/ros2_controllers_mecanum/install/ros2_controllers/share/ament_index/resource_index/package_run_dependencies/ros2_controllers\n'}
+[31.266423] (ros2_controllers) StdoutLine: {'line': b'-- Installing: /home/lass6230/github/ros2_controllers_mecanum/install/ros2_controllers/share/ament_index/resource_index/parent_prefix_path/ros2_controllers\n'}
+[31.266705] (ros2_controllers) StdoutLine: {'line': b'-- Installing: /home/lass6230/github/ros2_controllers_mecanum/install/ros2_controllers/share/ros2_controllers/environment/ament_prefix_path.sh\n'}
+[31.266918] (ros2_controllers) StdoutLine: {'line': b'-- Installing: /home/lass6230/github/ros2_controllers_mecanum/install/ros2_controllers/share/ros2_controllers/environment/ament_prefix_path.dsv\n'}
+[31.267038] (ros2_controllers) StdoutLine: {'line': b'-- Installing: /home/lass6230/github/ros2_controllers_mecanum/install/ros2_controllers/share/ros2_controllers/environment/path.sh\n'}
+[31.267150] (ros2_controllers) StdoutLine: {'line': b'-- Installing: /home/lass6230/github/ros2_controllers_mecanum/install/ros2_controllers/share/ros2_controllers/environment/path.dsv\n'}
+[31.267260] (ros2_controllers) StdoutLine: {'line': b'-- Installing: /home/lass6230/github/ros2_controllers_mecanum/install/ros2_controllers/share/ros2_controllers/local_setup.bash\n'}
+[31.267426] (ros2_controllers) StdoutLine: {'line': b'-- Installing: /home/lass6230/github/ros2_controllers_mecanum/install/ros2_controllers/share/ros2_controllers/local_setup.sh\n'}
+[31.267553] (ros2_controllers) StdoutLine: {'line': b'-- Installing: /home/lass6230/github/ros2_controllers_mecanum/install/ros2_controllers/share/ros2_controllers/local_setup.zsh\n'}
+[31.267663] (ros2_controllers) StdoutLine: {'line': b'-- Installing: /home/lass6230/github/ros2_controllers_mecanum/install/ros2_controllers/share/ros2_controllers/local_setup.dsv\n'}
+[31.267806] (ros2_controllers) StdoutLine: {'line': b'-- Installing: /home/lass6230/github/ros2_controllers_mecanum/install/ros2_controllers/share/ros2_controllers/package.dsv\n'}
+[31.268108] (ros2_controllers) StdoutLine: {'line': b'-- Installing: /home/lass6230/github/ros2_controllers_mecanum/install/ros2_controllers/share/ament_index/resource_index/packages/ros2_controllers\n'}
+[31.268306] (ros2_controllers) StdoutLine: {'line': b'-- Installing: /home/lass6230/github/ros2_controllers_mecanum/install/ros2_controllers/share/ros2_controllers/cmake/ros2_controllersConfig.cmake\n'}
+[31.268462] (ros2_controllers) StdoutLine: {'line': b'-- Installing: /home/lass6230/github/ros2_controllers_mecanum/install/ros2_controllers/share/ros2_controllers/cmake/ros2_controllersConfig-version.cmake\n'}
+[31.268628] (ros2_controllers) StdoutLine: {'line': b'-- Installing: /home/lass6230/github/ros2_controllers_mecanum/install/ros2_controllers/share/ros2_controllers/package.xml\n'}
+[31.270279] (ros2_controllers) CommandEnded: {'returncode': 0}
+[31.286731] (-) TimerEvent: {}
+[31.386993] (-) TimerEvent: {}
+[31.410417] (ros2_controllers) JobEnded: {'identifier': 'ros2_controllers', 'rc': 0}
+[31.411061] (-) EventReactorShutdown: {}
