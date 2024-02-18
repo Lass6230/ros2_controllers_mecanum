@@ -18,6 +18,8 @@
 #include "geometry_msgs/msg/twist.hpp"
 #include "realtime_tools/realtime_buffer.h"
 #include "realtime_tools/realtime_publisher.h"
+// #include "rcpputils/rolling_mean_accumulator.hpp"
+#include "rcppmath/rolling_mean_accumulator.hpp"
 
 #define PLANAR_POINT_DIM 3
 
@@ -75,6 +77,7 @@ public:
   void setWheelsParams(double sum_of_robot_center_projection_on_X_Y_axis, double wheels_radius);
 
 private:
+  using RollingMeanAccumulator = rcppmath::RollingMeanAccumulator<double>;
   /// Current timestamp:
   rclcpp::Time timestamp_;
 
@@ -96,6 +99,14 @@ private:
   /// sum_of_robot_center_projection_on_X_Y_axis_ = lx+ly
   double sum_of_robot_center_projection_on_X_Y_axis_;
   double wheels_radius_;  // [m]
+
+  
+  // void resetOdometry();
+  void resetAccumulators();
+  size_t velocity_rolling_window_size_ = 10;
+  RollingMeanAccumulator linear_x_accumulator_;
+  RollingMeanAccumulator linear_y_accumulator_;
+  RollingMeanAccumulator angular_accumulator_;
 };
 
 }  // namespace mecanum_drive_controller

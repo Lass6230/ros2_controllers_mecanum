@@ -28,7 +28,11 @@ Odometry::Odometry()
   velocity_in_base_frame_linear_y(0.0),
   velocity_in_base_frame_angular_z(0.0),
   sum_of_robot_center_projection_on_X_Y_axis_(0.0),
-  wheels_radius_(0.0)
+  wheels_radius_(0.0),
+  velocity_rolling_window_size_(10),
+  linear_x_accumulator_(10),
+  linear_y_accumulator_(10),
+  angular_accumulator_(10)
 {
 }
 
@@ -42,6 +46,8 @@ void Odometry::init(
   base_frame_offset_[0] = base_frame_offset[0];
   base_frame_offset_[1] = base_frame_offset[1];
   base_frame_offset_[2] = base_frame_offset[2];
+
+  resetAccumulators();
 }
 
 bool Odometry::update(
@@ -98,7 +104,10 @@ bool Odometry::update(
   /// Integration.
   /// NOTE: the position is expressed in the odometry frame , unlike the twist which is
   ///       expressed in the body frame.
-  orientation_z_in_base_frame_ += velocity_in_base_frame_angular_z * dt;
+  
+  angular_accumulator_.accumulate(velocity_in_base_frame_angular_z * dt);
+  orientation_z_in_base_frame_ += angular_accumulator_.getRollingMean();
+  // orientation_z_in_base_frame_ += velocity_in_base_frame_angular_z * dt;
 
   tf2::Quaternion orientation_R_b_odom;
   orientation_R_b_odom.setRPY(0.0, 0.0, -base_frame_offset_[2]+orientation_z_in_base_frame_);
@@ -108,8 +117,12 @@ bool Odometry::update(
     angular_transformation_from_base_2_odom *
     tf2::Vector3(velocity_in_base_frame_linear_x, velocity_in_base_frame_linear_y, 0.0);
 
-  position_x_in_base_frame_ += velocity_in_base_frame_w_r_t_odom_frame_.x() * dt;
-  position_y_in_base_frame_ += velocity_in_base_frame_w_r_t_odom_frame_.y() * dt;
+  linear_x_accumulator_.accumulate(velocity_in_base_frame_w_r_t_odom_frame_.x()* dt);
+  linear_y_accumulator_.accumulate(velocity_in_base_frame_w_r_t_odom_frame_.y()* dt);
+  position_x_in_base_frame_ += linear_x_accumulator_.getRollingMean();
+  position_y_in_base_frame_ += linear_y_accumulator_.getRollingMean();
+  // position_x_in_base_frame_ += velocity_in_base_frame_w_r_t_odom_frame_.x() * dt;
+  // position_y_in_base_frame_ += velocity_in_base_frame_w_r_t_odom_frame_.y() * dt;
 
   return true;
 }
@@ -119,6 +132,13 @@ void Odometry::setWheelsParams(
 {
   sum_of_robot_center_projection_on_X_Y_axis_ = sum_of_robot_center_projection_on_X_Y_axis;
   wheels_radius_ = wheels_radius;
+}
+
+void Odometry::resetAccumulators()
+{
+  linear_x_accumulator_ = RollingMeanAccumulator(velocity_rolling_window_size_);
+  linear_y_accumulator_ = RollingMeanAccumulator(velocity_rolling_window_size_);
+  angular_accumulator_ = RollingMeanAccumulator(velocity_rolling_window_size_);
 }
 
 }  // namespace mecanum_drive_controller
